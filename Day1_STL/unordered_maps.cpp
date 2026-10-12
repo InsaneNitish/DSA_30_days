@@ -14,6 +14,7 @@ int main(){
         frequency[num]++;
     }
 
+    
     cout<<"Frequency map  : \n";
 
     //adding manually a key pair

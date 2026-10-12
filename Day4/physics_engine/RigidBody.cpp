@@ -18,7 +18,7 @@ RigidBody::RigidBody(float start_x,float start_y,float obj_mass){
 
 void RigidBody:: AddForce(const Vec2& force){
     // Math: a=F/m
-    //we use mu,plication with inverse_mass because it is much faster
+    //we use multiplication with inverse_mass because it is much faster
     Vec2 resulting_acceleration = force*inverse_mass;
 
     //we add it to existing acceleration in case multiple forces act at once
@@ -33,3 +33,4 @@ void RigidBody::Integrate(float dt){
     //clear acc for next frame
     acceleration = Vec2(0.0f,0.0f);
 }
+
